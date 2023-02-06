@@ -26,6 +26,7 @@
     --bg-card-intro: #b5ddff;
     --primary-color: #9792e4;
     --secondary-color: #fff;
+    --footer-bg: #333333;
 }
 
 main{
@@ -78,6 +79,11 @@ header{
     margin: 50px auto;
 }
 
+footer{
+    padding: 50px;
+    background-color: var(--footer-bg);
+}
+
 
 @media screen and (min-width:768px){
     .container{
@@ -101,17 +107,7 @@ header{
         width: calc((100% / 3 * 2) - 1.4rem);
     }
 
-    #planning .columns{
-        margin: 0 50px;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-
-    }
-
-    #planning .column{
-        width: 40%;
-    }
+    
 
     #testimonial .card:nth-child(1n+2){
         display: flex;
@@ -164,6 +160,18 @@ header{
         width: 50%;
     }
 
+    #planning .columns{
+        margin: 0 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+    }
+
+    #planning .column{
+        width: 40%;
+    }
+
     #benefits .card{
         width: calc(100% / 3 - 20px);
     }
@@ -177,5 +185,12 @@ header{
 @media screen and (min-width:1200px){
     .container{
         max-width: 1170px;
+    }
+}
+
+
+@media screen and (min-width:481px){
+    footer .container{
+        max-width: 440px;
     }
 }
