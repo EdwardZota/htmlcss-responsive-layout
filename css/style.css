@@ -15,6 +15,10 @@
     height: 100px;
 }
 
+.card{
+    background-color: #dda04f;
+}
+
 /* inizio CSS */
 
 :root {
@@ -53,10 +57,10 @@ header{
 .card{
     background-color: var(--bg-card-intro);
     margin-bottom: 25px;
-    padding: 10px;
+    padding: 20px;
 }
 
-#planning{
+#planning,#benefits{
     background-color: var(--primary-color);
     padding: 50px 0;
 }
@@ -65,7 +69,7 @@ header{
     margin-bottom: 30px;
 }
 
-#testimonial .cards{
+#testimonial .cards,#benefits .card{
     margin-bottom: 50px;
     
 }
@@ -106,15 +110,25 @@ header{
 
     #testimonial .card:nth-child(1n+2){
         display: flex;
+    }
+
+    #testimonial .card:nth-child(1n+2) .main-box:first-child{
+        width: 25%;
+    }
+
+    #benefits .cards{
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    #testimonial .card:nth-child(1n+2) .main-box:last-child{
-        width: 80%;
+    #benefits .card{
+        width: calc(100% / 2 - 20px);
     }
 
-
 }
+
+
 
 @media screen and (min-width:992px) {
     .container{
@@ -128,7 +142,14 @@ header{
     #intro .card:first-child div{
         width: 50%;
     }
+
+    #benefits .card{
+        width: calc(100% / 3 - 20px);
+    }
+
 }
+
+
 
 @media screen and (min-width:1200px){
     .container{
