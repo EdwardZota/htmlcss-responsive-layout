@@ -56,6 +56,15 @@ header{
     padding: 10px;
 }
 
+#planning{
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+
+#planning .column{
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width:768px){
     .container{
         max-width: 740px;
@@ -76,6 +85,18 @@ header{
 
     #intro .card:first-child{
         width: calc((100% / 3 * 2) - 1.4rem);
+    }
+
+    #planning .columns{
+        margin: 0 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+    }
+
+    #planning .column{
+        width: 40%;
     }
 
 
