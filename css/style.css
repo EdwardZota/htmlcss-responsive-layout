@@ -65,6 +65,11 @@ header{
     margin-bottom: 30px;
 }
 
+#testimonial .cards{
+    margin-bottom: 50px;
+    
+}
+
 @media screen and (min-width:768px){
     .container{
         max-width: 740px;
@@ -97,6 +102,15 @@ header{
 
     #planning .column{
         width: 40%;
+    }
+
+    #testimonial .card:nth-child(1n+2){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #testimonial .card:nth-child(1n+2) .main-box:last-child{
+        width: 80%;
     }
 
 
