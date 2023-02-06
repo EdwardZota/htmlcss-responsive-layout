@@ -7,8 +7,12 @@
 /* Debug*/
 
 .box{
-    display: inline-block;
     background-color: #dda04f;
+}
+
+.main-box{
+    background-color: var(--bg-card-intro);
+    height: 100px;
 }
 
 /* inizio CSS */
@@ -18,6 +22,15 @@
     --bg-card-intro: #b5ddff;
     --primary-color: #9792e4;
     --secondary-color: #fff;
+}
+
+main{
+    padding-top: 100px;
+}
+
+.container{
+    max-width: 440px;
+    margin: 0 auto;
 }
 
 header{
@@ -37,7 +50,53 @@ header{
     align-items: center;
 }
 
-.container{
-    max-width: 440px;
-    margin: 0 auto;
+.card{
+    background-color: var(--bg-card-intro);
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 740px;
+    }
+
+    #intro .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:-0.7rem;
+        margin-right: -0.7rem;
+    }
+
+    #intro .card{
+        width: calc((100% / 3) - 1.4rem);
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+
+    #intro .card:first-child{
+        width: calc((100% / 3 * 2) - 1.4rem);
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+    .container{
+        max-width: 950px;
+    }
+    
+    #intro .card:first-child{
+        display: flex;
+    }
+
+    #intro .card:first-child div{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1170px;
+    }
 }
