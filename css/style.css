@@ -22,6 +22,11 @@
 
 html{
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 90px;
 }
 
 main{
