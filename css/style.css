@@ -6,17 +6,9 @@
 
 /* Debug*/
 
-.box{
-    background-color: #dda04f;
-}
-
 .main-box{
     background-color: var(--bg-card-intro);
     height: 100px;
-}
-
-.card{
-    background-color: #dda04f;
 }
 
 /* inizio CSS */
@@ -36,7 +28,45 @@ main{
 .container{
     max-width: 440px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
+
+.text-white{
+    color: var(--secondary-color);
+}
+
+header nav{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav li{
+    padding-left: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn.btn-white{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
 
 header{
     position: fixed;
@@ -48,12 +78,18 @@ header{
     background-color: var(--nav-color);
 }
 
-.nav{
+.container.nav{
     display: flex;
     justify-content: space-between;
     height: 100%;
     align-items: center;
 }
+
+.hamburger{
+    font-size: 1.5rem;
+}
+
+
 
 .card{
     background-color: var(--bg-card-intro);
@@ -174,6 +210,14 @@ footer{
 
     #benefits .card{
         width: calc(100% / 3 - 20px);
+    }
+    
+    .hamburger{
+        display: none;
+    }
+
+    header nav{
+        display: block;
     }
 
     
