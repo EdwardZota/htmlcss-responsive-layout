@@ -51,6 +51,10 @@ main{
     background-color: #fff;
 }
 
+.lh35{
+    line-height: 35px;
+}
+
 header nav{
     display: none;
 }
@@ -88,7 +92,7 @@ nav li{
     letter-spacing: 2px;
 }
 
-.btn.btn-violet{
+.btn-violet{
     background-color: var(--primary-color);
 }
 
@@ -120,7 +124,7 @@ header{
 
 
 
-.card{
+#intro .card{
     background-color: var(--bg-card-intro);
     margin-bottom: 25px;
     padding: 35px;
@@ -152,7 +156,6 @@ header{
     margin: 25px 0 0;
     font-weight: bold;
     color: #5a6e7f;
-    line-height: 35px;
 }
 
 #intro #phone-img{
@@ -189,7 +192,7 @@ header{
     line-height: 30px;
 }
 
-#planning .column:last-child{
+#planning .column:last-child,#testimonial .card{
     padding: 2rem;
     text-align: center;
 }
@@ -198,7 +201,6 @@ header{
     font-size: 25px;
     margin: 20px 0;
 }
-
 
 #planning .column:last-child p{
     line-height: 30px;
@@ -215,12 +217,58 @@ header{
     line-height: 31px;
     font-size: 20px;
 }
-
-
+/* da togliere e sistemare*/
 #testimonial .cards,#benefits .card{
     margin-bottom: 50px;
     
 }
+
+#testimonial{
+    text-align: center;
+    margin: 50px 0;
+}
+
+#testimonial .card {
+    margin-bottom: 30px;
+}
+
+#testimonial h2{
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+#testimonial p{
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+#testimonial .testimonial-image{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#testimonial i{
+    font-size: 22px;
+    position: relative;
+}
+#testimonial i:first-child{
+    top: -3px;
+    left: -3px;
+}
+
+#testimonial i:last-child{
+    top: 2px;
+
+}
+
+#testimonial .testimonial-name{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 
 #about-us {
     margin: 50px auto;
@@ -270,10 +318,15 @@ footer{
 
     #testimonial .card:nth-child(1n+2){
         display: flex;
+        text-align: left;
     }
 
     #testimonial .card:nth-child(1n+2) .main-box:first-child{
         width: 25%;
+    }
+
+    #testimonial .main-box{
+        padding-left: 20px;
     }
 
     #benefits .cards{
@@ -338,6 +391,10 @@ footer{
 
     #planning .column{
         width: 40%;
+    }
+
+    #testimonial .main-box{
+        padding: 30px 0 0 50px;
     }
 
     #benefits .card{
