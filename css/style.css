@@ -217,7 +217,7 @@ header{
     line-height: 31px;
     font-size: 20px;
 }
-/* da togliere e sistemare*/
+
 #testimonial .cards,#benefits .card{
     margin-bottom: 50px;
     
@@ -268,6 +268,35 @@ header{
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+#benefits .title{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+#benefits .card{
+    padding: 30px;
+}
+
+#benefits h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#benefits h2,#benefits h3{
+    color: var(--primary-color);
+}
+
+#benefits p{
+    margin: 20px 0 35px;
+}
+
+#benefits .btn {
+    letter-spacing: 1px;
+    padding: 10px 50px;
+}
+
 
 
 #about-us {
