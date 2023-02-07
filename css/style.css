@@ -330,6 +330,48 @@ header{
     margin-bottom: 90px;
 }
 
+#starter{
+    text-align: center;
+}
+
+#starter span:first-child{
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+#starter h2{
+    font-size: 30px;
+    margin: 10px 0 20px;
+}
+
+#starter h1{
+    font-size: 60px;
+    color: #fdc15f;
+}
+
+#starter .card span:last-child{
+    display: block;
+    margin-top: 35px;
+}
+
+#starter p{
+     margin: 20px 0 35px;
+}
+
+#starter span i{
+    font-size: 5px;
+    position: relative;
+    top: -3px;
+    left: 0;
+}
+
+#starter span a {
+    color: #fff;
+}
+
+
+
+
 footer{
     padding: 50px;
     background-color: var(--footer-bg);
@@ -411,6 +453,10 @@ footer{
 
     #starter .container{
         max-width: 600px;
+    }
+
+    #starter p {
+        padding: 0 100px;
     }
 
 }
