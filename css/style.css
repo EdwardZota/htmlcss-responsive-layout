@@ -243,7 +243,7 @@ header{
     font-weight: 500;
 }
 
-#testimonial .testimonial-image{
+.testimonial-image{
     object-fit: cover;
     width: 200px;
     height: 200px;
@@ -297,10 +297,37 @@ header{
     padding: 10px 50px;
 }
 
+#about-us h1{
+    margin-top: 70px;
+    font-size: 50px;
+    color: var(--primary-color);
+}
 
+#about-us p{
+    margin: 40px 0;
+}
 
-#about-us {
-    margin: 50px auto;
+#about-us #profil-image{
+    position: relative;
+}
+
+#about-us #profil-image i{
+    font-size: 75px;
+    position: absolute;
+    top: -13px;
+    left: 134px;
+}
+
+#about-us #profil-image i,#about-us h2{
+    color: var(--primary-color);
+}
+
+#about-us h2{
+    margin-bottom: 30px;
+}
+
+#about-us .columns{
+    margin-bottom: 90px;
 }
 
 footer{
@@ -370,14 +397,16 @@ footer{
 
     #about-us .columns{
         display: flex;
+        justify-content: space-between;
     }
 
     #about-us .column:first-child{
-        width: 70%;
+        width: 60%;
     }
 
     #about-us .column:last-child{
         width: 30%;
+        margin-top: 70px;
     }
 
     #starter .container{
@@ -429,6 +458,10 @@ footer{
     #benefits .card{
         width: calc(100% / 3 - 20px);
     }
+
+    #about-us h2 {
+        padding-right: 60px;
+    }
     
     .hamburger{
         display: none;
@@ -450,6 +483,10 @@ footer{
     }
     #intro img{
         top: 40px;
+    }
+
+    #about-us h2 {
+        padding-right: 135px;
     }
 }
 
